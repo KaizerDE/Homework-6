@@ -1,0 +1,94 @@
+@keyframes spin{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-spin {
+    border: 4px solid rgba(red, green, blue, alpha);
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+body{
+    background-color: black;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: #900C3F;
+    
+}
+
+@keyframes SlideInLeft{
+    from {
+        transform: translateX(-400px);
+    }
+    to {
+        transform: translateX(700px);
+    }
+}
+
+.heading-1 {
+    animation-name: SlideInLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: none;
+    transform: translateX(700px);
+}
+
+h1{
+    justify-content: center;
+    align-items: center;
+    color: #F94C10;
+}
+
+.image-1{
+    animation-name: SlideInLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: none;
+    transform: translateX(700px);
+}
+
+.image-2{
+    animation-name: SlideInLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: none;
+    transform: translateX(700px);
+}
+
+.image-3{
+    animation-name: SlideInLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: none;
+    transform: translateX(700px);
+}
